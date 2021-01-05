@@ -199,3 +199,25 @@ roslaunch manta_gazebo start_demo.launch
 ```
 roslaunch vortex simulator.launch DOESNT WORK YET
 ```
+
+# Running the Control System on the Raspberry Pi 4
+
+[This section is still under testing with no clear results yet.]
+
+## Setup
+
+1. Install ROS, but not ros-desktop-full. Barebone should work fine. Might need some extra dependencies.
+
+2. Install the dependencies (Might only be needed for simulator PC)
+
+3. Configure the workspace as normal
+
+4. IGNORE the simulator
+
+5. IGNORE the model of Manta
+
+6. Git clone the control system as normal
+
+7. Git clone the messages package
+
+8. Run custom tests (The entire system this time)
