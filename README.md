@@ -3,7 +3,7 @@
 Will add a customized UUV simulator later.
 
 Known problems:
-1. Gazebo doesn't shut down (or takes way too long) when you kill the node which started the program. Rapid relaunching of the `roslaunch` command might not work. Restarting your PC seems to work fine.
+1. Gazebo doesn't shut down (or takes way too long) when you kill the node which started the program. Rapid use of the `roslaunch` command and killing it again might therefore not work, and new simulations are waiting indefinitely for the last one to shut down. *Restarting your PC seems to work fine.*
 
 # Complete Setup
 
@@ -160,7 +160,7 @@ catkin build
 
 ```
 cd ~/catkin_ws/src
-[SOON]
+git clone https://github.com/napahlm/manta-rov.git
 ```
 
 2. Build the packages
@@ -192,4 +192,10 @@ catkin build
 
 ```
 roslaunch manta_gazebo start_demo.launch
+```
+
+2. Test the control system (Spawn the world and Manta first)
+
+```
+roslaunch vortex simulator.launch DOESNT WORK YET
 ```
