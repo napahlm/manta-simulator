@@ -185,6 +185,8 @@ catkin build
 
 ## Running Different Tests
 
-1. Spawn Manta in a default world
+1. Spawn Manta in a default world to test the simulator
 
-
+```
+roslaunch manta_gazebo start_demo.launch
+```
