@@ -1,10 +1,18 @@
-# manta-simulator
+# Mantabantalanta
 
 Will add a customized UUV simulator later.
 
 # Complete Setup
 
 You only need a working Linux desktop running Ubuntu 18.04 LTS.
+
+Tip: Copy/paste in the Ubuntu terminal is by default
+```
+Ctrl + Shift + C
+```
+```
+Ctrl + Shift + V
+```
 
 
 ## 1. ROS Melodic
