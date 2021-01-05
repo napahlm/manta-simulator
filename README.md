@@ -2,6 +2,9 @@
 
 Will add a customized UUV simulator later.
 
+Known problems:
+1. Gazebo doesn't shut down (or takes way too long) when you kill the node which started the program. Rapid relaunching of the `roslaunch` command might not work. Restarting your PC seems to work fine.
+
 # Complete Setup
 
 You only need a working Linux desktop running Ubuntu 18.04 LTS.
