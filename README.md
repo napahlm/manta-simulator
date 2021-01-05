@@ -21,5 +21,7 @@ sudo apt-get install python-catkin-tools
 
 ```
 mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws
+catkin_init_workspace
 
 ```
