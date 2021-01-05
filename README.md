@@ -13,9 +13,9 @@ sudo apt install protobuf-compiler ros-melodic-rosbridge-server ros-melodic-mess
 
 0. Catkin tools
 
-´´´
+```
 sudo apt-get install python-catkin-tools
-´´´
+```
 
 1. The catkin workspace
 
@@ -24,3 +24,18 @@ mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws
 catkin_init_workspace
 ```
+
+2. Build the workspace
+
+```
+cd ~/catkin_ws
+catkin build
+```
+
+3. Source the workspace
+
+```
+echo "source catkin_ws/devel/setup.bash" >> ~/.bashrc
+```
+4. Close current terminal
+
