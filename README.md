@@ -4,7 +4,7 @@ Will add a customized UUV simulator later.
 
 # Setup
 
-## Dependancies for interfacing
+## Dependancies
 
 ```
 sudo apt install protobuf-compiler ros-melodic-rosbridge-server ros-melodic-message-to-tf ros-melodic-geographic-msgs ros-melodic-move-base ros-melodic-move-base-msgs
@@ -14,6 +14,7 @@ sudo apt install protobuf-compiler ros-melodic-rosbridge-server ros-melodic-mess
 0. Catkin tools
 
 ```
+sudo apt-get update
 sudo apt-get install python-catkin-tools
 ```
 
@@ -38,4 +39,25 @@ catkin build
 echo "source catkin_ws/devel/setup.bash" >> ~/.bashrc
 ```
 4. Close current terminal
+
+## The UUV simulator
+
+1. Enter the package folder and clone the repository from their github
+
+```
+git clone https://github.com/uuvsimulator/uuv_simulator.git
+```
+
+3. Build the workspace
+
+```
+cd ~/catkin_ws
+catkin build
+```
+
+
+
+
+
+
 
