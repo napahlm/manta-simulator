@@ -91,7 +91,7 @@ catkin build
 3. Source the workspace
 
 ```
-echo "source catkin_ws/devel/setup.bash" >> ~/.bashrc
+echo 'source $HOME/catkin_ws/devel/setup.bash' >> ~/.bashrc
 ```
 4. Close current terminal
 
@@ -104,12 +104,10 @@ cd ~/catkin_ws/src
 git clone https://github.com/uuvsimulator/uuv_simulator.git
 ```
 
-2. Run this to add the lines sourcing the environment variables to `~/.bashrc`.
+2. Run this to add the lines sourcing the environment variables to `~/.bashrc`. (The environmen variables for ROS and the workspace are already sourced)
 
 ```
 echo 'source /usr/share/gazebo-9/setup.sh' >> ~/.bashrc
-echo 'source /opt/ros/melodic/setup.bash' >> ~/.bashrc
-echo 'source $HOME/catkin_ws/devel/setup.bash' >> ~/.bashrc
 ```
 
 3. Source the `.bashrc`.
@@ -126,4 +124,49 @@ cd ~/catkin_ws
 catkin build
 ```
 
-## 5. The Custom Manta Model
+## 5. The Manta Model
+
+1. Enter the package folder and clone the repository from github
+
+```
+cd ~/catkin_ws/src
+git clone https://github.com/napahlm/manta-model.git
+```
+
+2. Build the packages
+
+```
+cd ~/catkin_ws
+catkin build
+```
+
+## The Manta Control System
+1. Enter the package folder and clone the repository from github
+
+```
+cd ~/catkin_ws/src
+[SOON]
+```
+
+2. Build the packages
+
+```
+cd ~/catkin_ws
+catkin build
+```
+
+## The Vortex Messages Package
+
+1. Enter the package folder and clone the repository from github
+
+```
+cd ~/catkin_ws/src
+git clone https://github.com/vortexntnu/vortex_msgs.git
+```
+
+2. Build the packages
+
+```
+cd ~/catkin_ws
+catkin build
+```
