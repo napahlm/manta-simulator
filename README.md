@@ -182,3 +182,9 @@ git clone https://github.com/vortexntnu/vortex_msgs.git
 cd ~/catkin_ws
 catkin build
 ```
+
+## Running Different Tests
+
+1. Spawn Manta in a default world
+
+
