@@ -118,12 +118,16 @@ git clone https://github.com/uuvsimulator/uuv_simulator.git
 echo 'source /usr/share/gazebo-9/setup.sh' >> ~/.bashrc
 ```
 
-3. Source the `.bashrc`.
+3. Source the `.bashrc`
 
 ```
 source ~/.bashrc
 ```
+3.1. Trouble because of another workspace? Try this
 
+```
+source ~/catkin_ws/devel/setup.bash
+```
 
 4. Build the workspace
 
