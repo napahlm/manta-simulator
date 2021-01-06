@@ -210,6 +210,14 @@ roslaunch vortex simulator.launch DOESNT WORK YET
 
 2. Install the dependencies (Might only be needed for simulator PC)
 
+Weird dependencies needed for RPi:
+
+"osrf-common" is not automatically installed on RPi Ubuntu.
+
+```
+sudo apt install python-catkin-tools python-osrf-common
+```
+
 3. Configure the workspace as normal
 
 4. IGNORE the simulator
@@ -219,5 +227,12 @@ roslaunch vortex simulator.launch DOESNT WORK YET
 6. Git clone the control system as normal
 
 7. Git clone the messages package
+
+8. Build the workspace (Build vortex_msgs first since it's a dependancy kinda)
+
+```
+catkin build vortex_msgs
+catkin build
+```
 
 8. Run custom tests (The entire system this time)
