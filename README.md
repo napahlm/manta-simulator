@@ -202,7 +202,13 @@ roslaunch vortex simulator.launch DOESNT WORK YET
 
 # Running the Control System on the Raspberry Pi 4
 
-[This section is still under testing with no clear results yet.]
+The Raspberry Pi is running Ubuntu Mate 20.04 and ROS Noetic.
+This seems to be the only stable and maintained option as the right version of Ubuntu 18.04 for RPi4 is hard to find.
+Challenges running ROS Noetic on a system developed on ROS Melodic:
+1. Noetic uses Python3, Melodic uses Python 2.7 (Denoted Python in scripts). Make sure to either configure your Python Path to run Python3 when Python is called, or change Python to Python3 in all ROS python scripts in the first line. (i.e. #!/usr/bin/env python --> #!/usr/bin/env python3)
+Challenges running ROS on the RPi4:
+1. Usually ROS is installed without many dependancies because of the weaker processor.
+2. Access to the GPIO pins is by default done through the Raspberry Pi OS, but can be done easily on Ubuntu Mate. Normal Ubuntu versions lacks the permissions accessing the pins.
 
 ## Setup
 
