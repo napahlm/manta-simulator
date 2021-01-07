@@ -204,45 +204,67 @@ roslaunch vortex simulator.launch DOESNT WORK YET
 
 The Raspberry Pi is running Ubuntu Mate 20.04 and ROS Noetic.
 This seems to be the only stable and maintained option as the right version of Ubuntu 18.04 for RPi4 is hard to find.
-Challenges running ROS Noetic on a system developed on ROS Melodic:
+
+Known challenges running ROS Noetic on a system developed on ROS Melodic:
 
 1. Noetic uses Python3, Melodic uses Python 2.7 (Denoted Python in scripts). Make sure to either configure your Python Path to run Python3 when Python is called, or change Python to Python3 in all ROS python scripts in the first line. (i.e. #!/usr/bin/env python --> #!/usr/bin/env python3)
 
-Challenges running ROS on the RPi4:
+Known challenges running ROS on the RPi4:
 
-1. Usually ROS is installed without many dependancies because of the weaker processor.
+1. Usually ROS is installed without many dependancies because of the weaker processor. These will be added in a list below.
 
 2. Access to the GPIO pins is by default done through the Raspberry Pi OS, but can be done easily on Ubuntu Mate. Normal Ubuntu versions lacks the permissions accessing the pins.
 
 ## Setup
 
-1. Install ROS, but not ros-desktop-full. Barebone should work fine. Might need some extra dependencies.
+1. Install ros-base. Only consider ros-desktop for troubleshooting graphical tools.
 
-2. Install the dependencies (Might only be needed for simulator PC)
+http://wiki.ros.org/noetic/Installation/Ubuntu
 
-Weird dependencies needed for RPi:
+2. Install the dependencies specific for RPi4.
 
-"osrf-common" is not automatically installed on RPi Ubuntu.
-
-```
-sudo apt install python-catkin-tools python-osrf-common
-```
-
-3. Configure the workspace as normal
-
-4. IGNORE the simulator
-
-5. IGNORE the model of Manta
-
-6. Git clone the control system as normal
-
-7. Git clone the messages package
-
-8. Build the workspace (Build vortex_msgs first since it's a dependancy kinda)
+"osrf-common" is not automatically installed on RPi Ubuntu (Might be the ARM structure)
 
 ```
+sudo apt install python3-catkin-tools python3-osrf-common
+```
+
+Programs for configuring the GPIO pins (libi2c-dev ?)
+
+```
+sudo
+```
+
+3. Configure the workspace using catkin tools.
+
+```
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/
+catkin init
+```
+
+4. Install the message class
+
+```
+cd ~/catkin_ws/src
+git clone git clone https://github.com/vortexntnu/vortex_msgs.git
+```
+
+5. Install the ROV Control System.
+
+```
+cd ~/catkin_ws/src
+git clone https://github.com/USERNAME/REPO.git
+```
+
+6. Build the packages
+
+```
+cd ~/catkin_ws
 catkin build vortex_msgs
 catkin build
 ```
 
-8. Run custom tests (The entire system this time)
+8. Run some tests
+
+[Tests are coming.]
