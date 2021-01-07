@@ -22,6 +22,7 @@ Ctrl + Shift + V
 
 Detailed walkthrough: http://wiki.ros.org/melodic/Installation/Ubuntu
 
+Quick setup:
 
 1. Set up sources.list
 
@@ -45,7 +46,7 @@ sudo apt update
 sudo apt install ros-melodic-desktop-full
 ```
 
-4. Set up environment
+4. Set up environment variables
 
 ```
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
@@ -104,6 +105,7 @@ catkin build
 ```
 echo 'source $HOME/catkin_ws/devel/setup.bash' >> ~/.bashrc
 ```
+
 4. Close current terminal
 
 ## 4. The UUV simulator
@@ -139,7 +141,7 @@ cd ~/catkin_ws
 catkin build
 ```
 
-## 5. The Manta Model
+## 5. The Manta Gazebo Model
 
 1. Enter the package folder and clone the repository from github
 
