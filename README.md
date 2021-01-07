@@ -155,21 +155,6 @@ cd ~/catkin_ws
 catkin build
 ```
 
-## The Manta Control System
-1. Enter the package folder and clone the repository from github
-
-```
-cd ~/catkin_ws/src
-git clone https://github.com/napahlm/manta-rov.git
-```
-
-2. Build the packages
-
-```
-cd ~/catkin_ws
-catkin build
-```
-
 ## The Vortex Messages Package
 
 1. Enter the package folder and clone the repository from github
@@ -180,6 +165,22 @@ git clone https://github.com/vortexntnu/vortex_msgs.git
 ```
 
 2. Build the packages
+
+```
+cd ~/catkin_ws
+catkin build
+```
+
+## The Manta Control System
+
+1. Enter the package folder and clone the repository from github
+
+```
+cd ~/catkin_ws/src
+git clone https://github.com/napahlm/manta-rov.git
+```
+
+2. Build the packages. Make sure "vortex_msgs" is built first.
 
 ```
 cd ~/catkin_ws
