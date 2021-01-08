@@ -267,7 +267,34 @@ sudo apt install python3-catkin-tools python3-osrf-common
 Programs for configuring the GPIO pins (libi2c-dev ?)
 
 ```
-sudo
+sudo apt install python-is-python3
+```
+
+rosdep
+
+```
+sudo apt install python3-rosdep
+```
+
+```
+sudo rosdep init
+rosdep update
+```
+
+Git
+
+```
+sudo apt install git
+```
+
+Other
+
+```
+sudo apt install ros-noetic-eigen-conversions
+```
+
+```
+sudo apt install ros-noetic-roslint
 ```
 
 3. Configure the workspace using catkin tools.
