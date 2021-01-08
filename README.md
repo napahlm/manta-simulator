@@ -294,8 +294,19 @@ sudo apt install ros-noetic-eigen-conversions
 ```
 
 ```
+sudo apt install ros-noetic-tf ???
+```
+
+```
 sudo apt install ros-noetic-roslint
 ```
+
+Packages: joy
+
+```
+sudo apt install ros-noetic-joy
+```
+
 
 3. Configure the workspace using catkin tools.
 
