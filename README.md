@@ -232,6 +232,8 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 sudo apt install python3-catkin-tools python3-osrf-common
 ```
 
+"python-is-python3"
+
 Programs for configuring the GPIO pins (libi2c-dev ?)
 
 ```
