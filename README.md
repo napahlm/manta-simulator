@@ -220,6 +220,36 @@ Known challenges running ROS on the RPi4:
 
 ## Setup
 
+0. Ubuntu Mate?
+
+Wait for packages to finish installing (unattended-upgr). Takes a lot of time
+
+Activating SSH:
+
+```
+sudo apt update
+```
+```
+sudo apt install openssh-server
+```
+
+Verify that it's running with this:
+
+```
+sudo systemctl status ssh
+```
+
+Enable SSH.
+
+```
+sudo ufw allow ssh
+```
+
+Configure a static IP and SSH:
+
+[COMING]
+
+
 1. Install ros-base. Only consider ros-desktop for troubleshooting graphical tools.
 
 http://wiki.ros.org/noetic/Installation/Ubuntu
